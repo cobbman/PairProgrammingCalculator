@@ -1,0 +1,13 @@
+****************************************
+Welcome to Sterilng (fourcolors) and William's (Thor) Pair Programming Calculator practice stuff.
+
+Started on May 22, 2012
+
+++++++++++++++++++++++++++++++++++++++++
+========================================
+
+PURPOSE OF THIS PROGRAM: 
+
+We are going to create a calculator in Ruby as a practice project to help us learn about Ruby.
+
+We want it to add, subtract, multiply and divide. Plus, it will have a menu.
