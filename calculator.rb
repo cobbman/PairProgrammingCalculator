@@ -20,6 +20,14 @@ class Calculator
 			'Why did the fly fly?' => 'Because the spider spied her! Hoo Haa Hee Haa',
 			'What kind of movies to Pirates like to watch?' => 'Rated arrrrrrrr movies O_o tee hee'
 		}
+
+    joke = jokes.keys.first
+    answer = jokes[joke]
+
+    puts joke
+    puts "Press any key to see the answer"
+    gets
+    puts answer
 	end
 
 	def doUserChoice(choice = getUserChoice.to_i)
@@ -27,7 +35,8 @@ class Calculator
 		when 1
 			puts "you chose 1"
 		when 2
-			puts "you chose 2"
+      tellAJoke
+      doUserChoice
 		when 3
 			puts "you chose 3"
 		else
