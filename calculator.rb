@@ -1,15 +1,17 @@
 class Calculator
 	def initialize
+		puts '*************************'
 		puts 'Welcome to the Calculator'
-		choice = getUserChoice
-		puts "User choice was #{choice}" 
+		puts '*************************'
+
+		doUserChoice
 	end
 
 	private
 	def getUserChoice
 		puts '1. Calculate something 2. Tell me a joke 3. exit'
-		puts 'Enter your query:'
-		choice = gets
+		puts 'Enter your choice:'
+		gets
 	end
 
 	def tellAJoke
@@ -18,6 +20,20 @@ class Calculator
 			'Why did the fly fly?' => 'Because the spider spied her! Hoo Haa Hee Haa',
 			'What kind of movies to Pirates like to watch?' => 'Rated arrrrrrrr movies O_o tee hee'
 		}
+	end
+
+	def doUserChoice(choice = getUserChoice.to_i)
+		case choice
+		when 1
+			puts "you chose 1"
+		when 2
+			puts "you chose 2"
+		when 3
+			puts "you chose 3"
+		else
+			puts "Hey buddy, stay within the choices yer given."
+			doUserChoice
+		end
 	end
 
 end
