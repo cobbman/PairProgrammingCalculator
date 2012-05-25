@@ -38,7 +38,8 @@ class Calculator
       tellAJoke
       doUserChoice
 		when 3
-			puts "you chose 3"
+			puts "Goodbye"
+			Process.exit
 		else
 			puts "Hey buddy, stay within the choices yer given."
 			doUserChoice
